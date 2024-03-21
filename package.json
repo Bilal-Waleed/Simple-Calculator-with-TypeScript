@@ -1,9 +1,10 @@
 {
-  "name": "simple-calculator",
+  "name": "bw2-simple-calculator",
   "version": "1.0.0",
   "description": "A simple calculator with typescript nodejs and inquirer",
   "main": "index.js",
   "type": "module",
+  "bin": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

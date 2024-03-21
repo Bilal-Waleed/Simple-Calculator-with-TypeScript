@@ -1,3 +1,5 @@
+#! /usr/bin/env node 
+
 import inquirer from "inquirer";
 
 const answer = await inquirer.prompt([
@@ -7,7 +9,7 @@ const answer = await inquirer.prompt([
         message: "Select one of operators to perform action",
         type: "list",
         name: "operator",
-        choices: ["ADDITION", "SUBSTRACTION", "MULTIPLICATION", "DIVISION" , `REMAINDER` , `POWER`],  
+        choices: [`ADDITION`, `SUBSTRACTION`, `MULTIPLICATION`, `DIVISION` , `REMAINDER` , `POWER`],  
     }
 ])
     //conditional statments
