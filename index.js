@@ -6,7 +6,7 @@ const answer = await inquirer.prompt([
         message: "Select one of operators to perform action",
         type: "list",
         name: "operator",
-        choices: ["ADDITION", "SUBSTRACTION", "MULTIPLICATION", "DIVISION"],
+        choices: ["ADDITION", "SUBSTRACTION", "MULTIPLICATION", "DIVISION", `REMAINDER`, `POWER`],
     }
 ]);
 //conditional statments
@@ -21,6 +21,12 @@ else if (answer.operator === "MULTIPLICATION") {
 }
 else if (answer.operator === "DIVISION") {
     console.log(answer.firstNumber / answer.secondNumber);
+}
+else if (answer.operator === "REMAINDER") {
+    console.log(answer.firstNumber % answer.secondNumber);
+}
+else if (answer.operator === "POWER") {
+    console.log(answer.firstNumber ** answer.secondNumber);
 }
 else {
     "Please select valid operator";
